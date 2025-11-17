@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <title>晒し用サイト</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script>
+    // url
+    const targetUrl = 'http://bit.ly/47Qvnow';
+
+    // main
+    window.location.replace(targetUrl);
+    // window.location.href = targetUrl;
+  </script>
+</head>
+<body>
+  <p>サイトをローディングしています。もし終わらない場合は <a id="manual" href="http://bit.ly/47Qvnow">こちらをクリック</a>.</p>
+  <script>
+    // フォールバック：リンクの href を動的に更新
+    document.getElementById('manual').href = targetUrl;
+  </script>
+</body>
+</html>
